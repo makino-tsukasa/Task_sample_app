@@ -19,14 +19,14 @@
 
       <%= form_with(scope: :session, url: login_path, local: true) do |f| %>
 
-        <%= f.label :email, class: "label-login" %>
+        <%= f.label :email, 'メールアドレス', class: "label-login" %>
         <% if logged_in? %>
           <%= f.email_field :email, readonly: true, class: 'form-control' %>
         <% else %>
           <%= f.email_field :email, class: 'form-control' %>
         <% end %>
         
-        <%= f.label :password, class: "label-login" %>
+        <%= f.label :password, 'パスワード', class: "label-login" %>
         <% if logged_in? %>
           <%= f.password_field :password, readonly: true, class: 'form-control' %>
         <% else %>

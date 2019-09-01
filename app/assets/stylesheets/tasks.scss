@@ -1,0 +1,27 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* index */
+
+.btn-new-task {
+  float: right;
+}
+
+.task-name {
+  font-size : 18px;
+}
+
+/* edit */
+
+.btn-edit-task {
+  margin-top : 10px;
+}
+
+/* show */
+
+.table-task {
+  margin-top: 20px;
+  th {
+    text-align: center;
+  }
+}
