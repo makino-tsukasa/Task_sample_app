@@ -86,6 +86,12 @@ li .dropdown-header {
   font-weight: bold;
 }
 
+.dropdown-toggle {
+  &:focus {
+  background-color: teal !important;
+  }
+}
+
 /* トップページ */
 
 #top-main-title {

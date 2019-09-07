@@ -3,9 +3,9 @@
 <h1><%= @user.name %>のタスク一覧</h1>
 
 <div class="row">
+  <div class="col-md-10 col-md-offset-1">
   <%= link_to "タスク新規作成", new_user_task_path(@user), class: "btn btn-lg btn-primary btn-new-task" %>
-
-  <table class="table">
+    <table class="table">
     <thead>
       <tr>
         <th>名称</th>
@@ -27,5 +27,6 @@
       <% end %>
     </tbody>
   </table>
+  </div>
 </div>
   
